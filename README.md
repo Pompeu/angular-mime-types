@@ -18,7 +18,7 @@ in your module angular import ['mys.mimes];
     .controller('MyCtrl', ['mimes', fuction (mimes) {
       const file = {name: 'foo', mineType: 'plain/text'};
 
-      const ext = mimes.getExtension(file);
+      const ext = mimes.getExtension(file.mimeType);
       console.log(ext); // 'txt'
     });
 ```
