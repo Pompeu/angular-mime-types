@@ -1,0 +1,16 @@
+{
+  "name": "mime-type-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "rm -rf && node build.js && npm run minify",
+    "minify": "./node_modules/.bin/uglifyjs dist/mimetypes.js -o dist/mimetypes.min.js"
+  },
+  "author": "Itacir Ferreira Pompeu",
+  "license": "MIT",
+  "dependencies": {
+    "mime-db": "^1.24.0",
+    "uglify-js": "^2.7.4"
+  }
+}
